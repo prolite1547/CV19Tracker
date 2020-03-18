@@ -1,10 +1,7 @@
 import '../widgets/country_card.dart';
 import 'package:flutter/material.dart';
 import '../../model/GetData.dart';
-
-
-
-
+ 
 class CountryListLayout extends StatefulWidget {
   CountryListLayout({Key key}) : super(key: key);
 
