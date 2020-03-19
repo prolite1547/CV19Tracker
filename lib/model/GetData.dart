@@ -8,16 +8,16 @@ import 'dart:convert';
 
 
 Future<Country> getCountry() async {
-    var response = await http.post(
+    var response = await http.get(
         Uri.encodeFull("https://coronavirus-19-api.herokuapp.com/countries"),
         headers: {"Accept": "application/json"});
     var data = jsonDecode(response.body);
-    Country country = new Country.fromJson(data);
-    return country;
+        Country country = new Country.fromJson(data);
+        return country;
 }
 
 Future<Overall> getTotal() async{
-  var response = await http.post(
+  var response = await http.get(
         Uri.encodeFull("https://coronavirus-19-api.herokuapp.com/all"),
         headers: {"Accept": "application/json"});
     var data = jsonDecode(response.body);

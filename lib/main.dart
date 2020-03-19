@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import './views/layouts/layout_main.dart';
 
-void main() => runApp(MyApp());
 
 const MainLayout = "/";
 
+void main() => runApp(MyApp());
+ 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Covid-19 Realtime Tracker',
-      
+      onGenerateRoute: _routes(),
     );
   }
 
