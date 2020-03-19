@@ -19,7 +19,7 @@ class Country{
      this.critical
   });
 
-factory Country.fromJson(Map<String, dynamic> json){
+factory Country.fromJson(Map<dynamic, dynamic> json){
     return Country(
        country: json["countyr"],
        cases: json["cases"],
