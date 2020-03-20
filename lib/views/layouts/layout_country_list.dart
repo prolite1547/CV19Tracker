@@ -28,14 +28,15 @@ class _CountryListLayoutState extends State<CountryListLayout> {
                       child: Text("There was a problem while fetching updated data. Kindly check your internet connection and try to reload this application.", textAlign: TextAlign.center,style: TextStyle(color:Colors.blueGrey),),
                     ));
                 else
-                  return ListView.builder(
-                    padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 10.0),
-                    itemCount: snapshot.data.length,
-                    physics: ClampingScrollPhysics(),
-                    itemBuilder: (BuildContext context, int index){
-                        return CountryCardWidget(country: snapshot.data[index].country);
-                    },
-                    );
+                return Container();
+                  // return ListView.builder(
+                  //   padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 10.0),
+                  //   itemCount: snapshot.data.length,
+                  //   physics: ClampingScrollPhysics(),
+                  //   itemBuilder: (BuildContext context, int index){
+                  //       return CountryCardWidget(country: snapshot.data[index].country);
+                  //   },
+                  //   );
                 break;
             }
          },
