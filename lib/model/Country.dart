@@ -11,7 +11,7 @@ class Country{
   Country({
     this.country,
     this.cases,
-    this.todayCases,
+     this.todayCases,
      this.deaths,
      this.todayDeaths,
      this.recovered,

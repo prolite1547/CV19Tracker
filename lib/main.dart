@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Covid-19 Realtime Tracker',
+      onGenerateRoute: _routes(),
       
     );
   }
