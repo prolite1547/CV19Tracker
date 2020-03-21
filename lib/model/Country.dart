@@ -1,12 +1,12 @@
 class Country{
   String country;
-  String cases;
-  String todayCases;
-  String deaths;
-  String todayDeaths;
-  String recovered;
-  String active;
-  String critical;
+  int cases;
+  int todayCases;
+  int deaths;
+  int todayDeaths;
+  int recovered;
+  int active;
+  int critical;
 
   Country({
     this.country,
@@ -19,9 +19,9 @@ class Country{
      this.critical
   });
 
-factory Country.fromJson(Map<dynamic, dynamic> json){
+factory Country.fromJson(Map<String, dynamic> json){
     return Country(
-       country: json["countyr"],
+       country: json["country"],
        cases: json["cases"],
        todayCases: json["todayCases"],
        deaths: json["deaths"],

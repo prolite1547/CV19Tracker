@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "999956626030",
+    "firebase_url": "https://cv19tracker-f82ae.firebaseio.com",
+    "project_id": "cv19tracker-f82ae",
+    "storage_bucket": "cv19tracker-f82ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999956626030:android:80cf3f5ac47135aee4447f",
+        "android_client_info": {
+          "package_name": "com.deqfivestudios.covid19_tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999956626030-1n08ik7u04e8aj1dg0erbebejpqvi6ks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1mk5IJLEi5FR5kGPtzmZiILkAzCIqPbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999956626030-1n08ik7u04e8aj1dg0erbebejpqvi6ks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

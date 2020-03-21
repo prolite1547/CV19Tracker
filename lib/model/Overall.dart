@@ -1,7 +1,7 @@
 class Overall{
-  String cases;
-  String deaths;
-  String recovered;
+  int cases;
+  int deaths;
+  int recovered;
 
   Overall({
     this.cases,
@@ -9,7 +9,7 @@ class Overall{
     this.recovered
   });
 
-  factory Overall.fromJson(Map<String, dynamic> json){
+  factory Overall.fromJson(var json){
     return Overall(
        cases: json["cases"],
        deaths: json["deaths"],
