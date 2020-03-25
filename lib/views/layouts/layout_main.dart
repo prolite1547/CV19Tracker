@@ -1,10 +1,11 @@
 import 'dart:io';
-import '../../model/Admob.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'layout_country_list.dart';
 import 'layout_total.dart';
 import '../../styles.dart';
+
+ 
 
 class LayoutMain extends StatefulWidget {
   LayoutMain({Key key}) : super(key: key);
@@ -15,21 +16,13 @@ class LayoutMain extends StatefulWidget {
 
 class _LayoutMainState extends State<LayoutMain> {
 
- Future showPopup(BuildContext context, AlertDialog dialog) async {
-    return showDialog(
-        context: context,
-        builder: (BuildContext context) {
-          return dialog;
-        });
-  }
-
+   
   Future<bool> _onWillPop() {
-    // showInterstitialAd();
     return showDialog(
           context: context,
           builder: (context) => new AlertDialog(
             backgroundColor: DraculaOrchid,
-            title: new Text("Are you sure ?", style: Label1TextStyle),
+            title: new Text("Are you sure ?", style: SubLabel3Style),
             content: new Text(
               'You are about to exit',
               style: SubLabel2Style,
@@ -49,10 +42,16 @@ class _LayoutMainState extends State<LayoutMain> {
         false;
   }
 
+
   @override
   void initState() {
     super.initState();
-    SystemChrome.setEnabledSystemUIOverlays([]);
+   SystemChrome.setEnabledSystemUIOverlays ([SystemUiOverlay.bottom]);
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
   }
 
 
@@ -83,7 +82,7 @@ class _LayoutMainState extends State<LayoutMain> {
       ),
       body: GestureDetector(
         onTap: (){
-           SystemChrome.setEnabledSystemUIOverlays([]);
+          SystemChrome.setEnabledSystemUIOverlays ([SystemUiOverlay.bottom]);
         },
         child: WillPopScope(child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,

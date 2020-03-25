@@ -27,7 +27,6 @@ dependencies:
   loading: ^1.0.2
   flag: ^1.0.3
   firebase_admob: ^0.9.3
-  
 
 dev_dependencies:
   flutter_test:

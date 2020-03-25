@@ -80,6 +80,14 @@ const SubLabel2Style  = TextStyle(
   color: Alizarin
 );
 
+const SubLabel3Style  = TextStyle(
+  fontFamily: VarelaRoundFontFamily,
+  fontSize: MediumFontSize,
+  fontWeight: FontWeight.w400,
+  color: Silver
+);
+
+
 const Label2TextStyle  = TextStyle(
   fontFamily: VarelaRoundFontFamily,
   fontSize: LargeFontSize,

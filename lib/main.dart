@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import './views/layouts/layout_main.dart';
-import './model/Admob.dart';
+ 
 
 
 const MainLayout = "/";
 
 void main(){
-  // initializeAdmob();
   runApp(MyApp());
 }
  

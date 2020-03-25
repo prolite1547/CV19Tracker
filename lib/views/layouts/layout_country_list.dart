@@ -42,7 +42,7 @@ class _CountryListLayoutState extends State<CountryListLayout> {
                 else
          
                   return ListView.builder(
-                    padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 10.0),
+                    padding: EdgeInsets.only(left: 5.0, right: 5.0, top: 10.0, bottom: 30.0),
                     itemCount: snapshot.data.length,
                     physics: ClampingScrollPhysics(),
                     itemBuilder: (BuildContext context, int index){
